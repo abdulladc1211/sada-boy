@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+/* Dark Mode Button */
+#theme-toggle {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    background: #444;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Sections */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+/* Upload Section */
+#upload-section {
+    display: none;
+    padding: 20px;
+    background: #ddd;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Character Counter */
+#char-count {
+    color: #666;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background: #333;
+    color: white;
+    padding: 10px;
+}

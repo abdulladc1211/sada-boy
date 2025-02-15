@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sada Boy - Poetry & Blogs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sada Boy - Urdu & English Poetry</h1>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Poetry</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="poetry-section">
+            <h2>Featured Poetry</h2>
+            <p>Welcome to Sada Boy, a collection of Urdu & English poetry.</p>
+        </section>
+
+        <section id="blog-section">
+            <h2>Latest Blogs</h2>
+            <p>Read the latest blogs about social and political issues.</p>
+        </section>
+
+        <!-- Hidden Login Button -->
+        <button id="login-button" onclick="login()">Login</button>
+
+        <!-- Upload Section (Hidden by Default) -->
+        <section id="upload-section" style="display: none;">
+            <h2>Upload Poetry or Blog</h2>
+            <input type="text" id="title" placeholder="Enter Title">
+            <textarea id="content" placeholder="Write your poetry or blog here..." oninput="updateCounter()"></textarea>
+            <p id="char-count">0/500 characters</p>
+            <button onclick="uploadContent()">Upload</button>
+            <button onclick="logout()">Logout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Sada Boy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
